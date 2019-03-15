@@ -1,0 +1,13 @@
+package gate.samples;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SbGateMultithreadConsoleApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SbGateMultithreadConsoleApplication.class, args);
+	}
+
+}
