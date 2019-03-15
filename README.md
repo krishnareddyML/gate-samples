@@ -1,2 +1,2 @@
 # gate-samples
-will add GATE Application related samples
+This repository will maintain all GATE application related sample projects and code snippets
