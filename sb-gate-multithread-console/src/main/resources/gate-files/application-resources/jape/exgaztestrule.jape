@@ -1,0 +1,12 @@
+Phase: ExtendedGazTest
+Input: ExtendedLookup
+Options: control=appelt
+
+Rule:ExgazTest
+(
+
+{ExtendedLookup}
+
+):lhs
+-->
+:lhs.ExgazAppelt={string=:lhs.Extended@cleanString}
