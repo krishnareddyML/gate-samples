@@ -41,10 +41,14 @@ public class GateApplicationRunner
 			*/
 			
 			// Currently using raw location of the file, but it is not correct way to use in production  
-			File file = new File("/home/eclipse-workspace/mvn-gate-app/src/main/resources/gate-files/GateApplication.xgapp");
+			// File file = new File("/home/eclipse-workspace/mvn-gate-app/src/main/resources/gate-files/GateApplication.xgapp");
 			
 			
-            corpusController = (CorpusController)PersistenceManager.loadObjectFromFile(file);
+           // corpusController = (CorpusController)PersistenceManager.loadObjectFromFile(file);
+			
+			ClassLoader classLoader = getClass().getClassLoader();
+			corpusController =
+(CorpusController)PersistenceManager.loadObjectFromUrl(classLoader.getResource("gate-files/GateApplication.xgapp"));
 			
 		}catch(Exception exception) {
 			exception.printStackTrace();
